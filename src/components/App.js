@@ -1,13 +1,25 @@
+import React from 'react';
+import { useState,useEffect } from 'react'
 
-import React from "react";
-import './../styles/App.css';
-
-const App = () => {
-  return (
-    <div>
-        {/* Do not remove the main div */}
-    </div>
-  )
+function App() {
+  const [input,setInput]=useState("");
+  useEffect(()=>{
+   console.log("value changed:",input);
+   
+  },[input])
+   
+return(
+  <div>
+   <input 
+      type="text"
+      onChange={(e) => {
+   setInput(e.target.value);
+  
+}}
+   />
+</div>
+)
 }
+
 
 export default App
