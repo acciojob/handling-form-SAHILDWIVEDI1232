@@ -10,6 +10,7 @@ function App() {
    
 return(
   <div>
+  <form>
    <input 
       type="text"
       onChange={(e) => {
@@ -17,6 +18,7 @@ return(
   
 }}
    />
+        </form>
 </div>
 )
 }
